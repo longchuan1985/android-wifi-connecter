@@ -14,8 +14,9 @@ A short example:
 final Intent intent = new Intent("com.farproc.wifi.connecter.action.CONNECT_OR_EDIT");
 intent.putExtra("com.farproc.wifi.connecter.extra.HOTSPOT", scanResult);
 startActivity(intent);
+```
 A long example:
-
+```java
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
