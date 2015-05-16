@@ -10,7 +10,7 @@ After digging into the android source code I got something finally.
 This library is very easy to use:
 
 A short example:
-
+```java
 final Intent intent = new Intent("com.farproc.wifi.connecter.action.CONNECT_OR_EDIT");
 intent.putExtra("com.farproc.wifi.connecter.extra.HOTSPOT", scanResult);
 startActivity(intent);
@@ -22,8 +22,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.net.wifi.ScanResult;
 import android.widget.Toast;
-...
-...
+
 private static void launchWifiConnecter(final Activity activity, final ScanResult hotspot) {
   final Intent intent = new Intent("com.farproc.wifi.connecter.action.CONNECT_OR_EDIT");
   intent.putExtra("com.farproc.wifi.connecter.extra.HOTSPOT", hotspot);
@@ -56,4 +55,5 @@ private static void downloadWifiConnecter(final Activity activity) {
     }
   }
 }
+```
 See com.farproc.wifi.connecter.TestWifiScan for detailes.
